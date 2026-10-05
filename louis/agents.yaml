@@ -1,0 +1,56 @@
+defaults:
+  subagents:
+    maxSpawnDepth: 2
+
+main:
+  subagents:
+    allowAgents:
+      - explorateur
+      - planner
+      - sceptique
+      - serendipity-guard
+      - auditor
+    delegationMode: prefer
+    requireAgentId: true
+
+agents:
+  - id: explorateur
+    description: >
+      Discovers sports, cultural events, museums,
+      outdoor activities, and unusual experiences.
+    tools:
+      allow:
+        - read
+
+  - id: planner
+    description: >
+      Checks availability, scheduling constraints,
+      travel time, and practical feasibility.
+    tools:
+      allow:
+        - read
+
+  - id: sceptique
+    description: >
+      Challenges proposals using user feedback,
+      cost, relevance, and evidence quality.
+    tools:
+      allow:
+        - read
+
+  - id: serendipity-guard
+    description: >
+      Introduces safe and relevant experiences
+      outside the user's established habits.
+    tools:
+      allow:
+        - read
+
+  - id: auditor
+    description: >
+      Acts as the final circuit breaker and validates
+      recommendations before they reach the user.
+    tools:
+      allow:
+        - read
+
