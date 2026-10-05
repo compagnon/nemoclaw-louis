@@ -1,0 +1,114 @@
+Run the complete “Louis Under the Hood” long-running workflow.
+
+Context:
+- Home location: Versailles, France
+- Planning horizon: the next available weekend
+- Budget: maximum €50
+- Preferred activities: culture, museums, outdoor activities, sports, concerts, workshops, and local discoveries
+- Goal: propose a realistic leisure plan containing up to three strong options and one meaningful serendipitous experience
+- Do not make any booking, payment, calendar modification, or external commitment without my explicit approval
+
+Long-running mission:
+
+Louis must maintain an ongoing leisure-planning cycle rather than produce a one-shot recommendation.
+
+For this first cycle:
+
+1. Ask Planner to inspect the authorized calendar information and identify practical free-time windows.
+   Planner must consider preparation, travel, arrival margin, activity duration, return travel, and existing commitments.
+
+2. Ask Explorateur to search current and verifiable sources for real activities matching those windows.
+   Each candidate must include:
+   - title
+   - category
+   - date and time
+   - location
+   - verified or estimated price
+   - official source when available
+   - booking requirements
+   - confidence level
+   - reason it may fit
+
+3. Ask Sceptique to challenge the candidates.
+   It must examine:
+   - relevance
+   - previous feedback
+   - unsupported assumptions
+   - travel burden
+   - cost
+   - repetition
+   - expected value
+   - possible reasons for regret
+
+4. Ask Serendipity_guard to review the recommendation set for repetition and filter-bubble risk.
+   Sere may select at most one meaningful serendipity candidate.
+   The candidate must have a clear relevance bridge and must not be random.
+
+5. Ask Planner to evaluate the revised candidates and construct a realistic itinerary.
+
+6. Ask Auditor to perform the final circuit-breaker review.
+   Auditor must check:
+   - event validity
+   - source quality
+   - date and time
+   - calendar feasibility
+   - travel assumptions
+   - budget
+   - user constraints
+   - unresolved contradictions
+   - commercial disclosures
+   - required user approvals
+
+7. If Auditor returns REVISION_REQUIRED:
+   - route the exact issue to the responsible specialist;
+   - allow one focused revision cycle;
+   - submit the revised proposal to Auditor again.
+
+8. If Auditor returns BLOCKED:
+   - do not recommend or execute the blocked proposal;
+   - explain the blocking reason;
+   - retain any unaffected, validated alternatives.
+
+9. Present only proposals approved by Auditor.
+
+For the final response, show:
+
+- the free-time windows identified by Planner;
+- each specialist handoff;
+- a concise summary of each specialist’s contribution;
+- proposals rejected or revised and why;
+- the final approved recommendations;
+- expected cost;
+- travel considerations;
+- verified sources;
+- the serendipitous option;
+- the Auditor’s final status;
+- actions that still require my approval.
+
+Long-running continuation:
+
+After presenting the plan:
+
+- preserve the validated recommendations and their proposal versions;
+- remember which activity I select, reject, or ignore;
+- after the planned leisure period, request concise feedback about attendance, enjoyment, cost, travel, and whether I would try something similar again;
+- distinguish explicit feedback from tentative interpretations;
+- update future recommendations without turning one experience into a permanent preference;
+- detect repeated categories and venues across planning cycles;
+- preserve controlled serendipity;
+- prepare the next planning cycle when a new suitable free-time window becomes available;
+- do not send repetitive notifications;
+- do not claim that a recurring check occurred unless it actually executed.
+
+Start the first cycle now.
+
+At the beginning, display:
+
+LOUIS LONG-RUNNING CYCLE STARTED
+
+At the end, display one of:
+
+LOUIS CYCLE COMPLETE — APPROVED PLAN READY
+LOUIS CYCLE COMPLETE — USER INPUT REQUIRED
+LOUIS CYCLE COMPLETE — NO RELIABLE PLAN
+
